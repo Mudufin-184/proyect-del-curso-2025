@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import './App.css'
-import Cripto from "./Cripto.jsx";
+import './Cuadricula.css'
+import Cripto from "./cripto/Cripto.jsx";
 
-function App() {
+
+function Cuadricula() {
   const [criptos, setCriptos] = useState([]); 
   const apiUrl = "https://api.coincap.io/v2/"; 
 
@@ -39,4 +40,4 @@ function App() {
   );
 }
 
-export default App;
+export default Cuadricula;
