@@ -6,7 +6,8 @@ function Menu (){
         <nav className="main-menu">
             <ul>
                 <li><NavLink to="/">Inicio</NavLink></li>
-                <li><NavLink to="/saludo">Saludo</NavLink></li>
+                <li><NavLink to="/criptomonedas">Lista de criptos</NavLink></li>
+                
             </ul>
         </nav>
     )

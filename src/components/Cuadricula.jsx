@@ -31,6 +31,7 @@ function Cuadricula() {
               name={name} price={priceUsd} 
               symbol={symbol} 
               changePercent24Hr={changePercent24Hr}
+              id={id}
             /> 
           ))}
         </div> 
