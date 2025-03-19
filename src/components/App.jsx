@@ -1,13 +1,17 @@
-import { Outlet } from "react-router-dom";
-import Menu from "./menu/Menu";
+import { Navigate, Outlet } from "react-router-dom"
+import Menu from "./menu/Menu"
+import "./App.css"
 
-function App () {
-    return(
-        <>
-        <Menu/>
-        <Outlet/>
-        </>
-    )
+const App = () => {
+
+  if (!localStorage.getItem("tokenEDmarket")) return <Navigate to="/login" />
+
+  return (
+    <div className="app-container">
+      <Menu />
+      <Outlet />
+    </div>
+  )
 }
 
 export default App

@@ -1,10 +1,8 @@
-function Pagina404 () {
-    return(
+function Pagina404  () {
     <>
-        <h1>Página no encontrada</h1>
-        <span>La pagina solicitada, no existe</span>    
+      <h1>Página no encontrada</h1>
+      <span>La página solicitada, no existe</span>
     </>
-    )
 }
-
-export default Pagina404
+  
+  export default Pagina404
